@@ -1,5 +1,5 @@
 {
-  "name": "loopback-connector-mysql",
+  "name": "@vanthios/loopback-connector-mysql",
   "version": "5.4.2",
   "description": "MySQL connector for loopback-datasource-juggler",
   "engines": {
