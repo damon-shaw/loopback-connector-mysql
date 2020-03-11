@@ -1,3 +1,26 @@
+### @damon-shaw/loopback-connector-mysql
+This is a fork of the original MySQL connector for LoopBack. It has been modified to support filtering
+on nested properties.
+
+Model structure...
+```ts
+Employer {
+  name: string;
+  employees: Array<Employee>
+}
+```
+
+Available query...
+```json
+"filter": {
+  "where": {
+    "employees": { "name": "Damon" }
+  }
+}
+```
+
+The above query will return all employers who have at least one employee with the name _Damon_.
+
 # loopback-connector-mysql
 
 [MySQL](https://www.mysql.com/) is a popular open-source relational database management system (RDBMS).  The `loopback-connector-mysql` module provides the MySQL connector module for the LoopBack framework.
